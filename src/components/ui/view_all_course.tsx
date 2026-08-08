@@ -71,4 +71,3 @@ export default function ViewAllCourse(): JSX.Element {
     </motion.div>
   );
 }
-
