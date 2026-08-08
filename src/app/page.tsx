@@ -4,6 +4,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import MusicSchoolTestimonials from "@/components/moveingCard";
 import UpcomingWebinars from "@/components/UpComingWedinar";
 import { AnimatedTooltipPreview } from "@/components/Animated_Tooltip";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
      <MusicSchoolTestimonials/>
      <UpcomingWebinars/>
      <AnimatedTooltipPreview/>
+     <Footer/>
  </main>
   );
 }
