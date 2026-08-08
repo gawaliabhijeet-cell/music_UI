@@ -1,86 +1,92 @@
-'use client'
-import Link from "next/link"
+
+"use client";
+
 import { HoverEffect } from "./ui/card-hover-effect";
 import ViewAllCourse from "./ui/view_all_course";
 
 function UpcomingWebinars() {
-
   const featuredWebinars = [
     {
-      title: 'Understanding Music Theory',
+      title: "Understanding Music Theory",
       description:
-        'Dive deep into the fundamentals of music theory and enhance your musical skills.',
-      slug: 'understanding-music-theory',
+        "Dive deep into the fundamentals of music theory and enhance your musical skills.",
+      slug: "understanding-music-theory",
       isFeatured: true,
     },
     {
-      title: 'The Art of Songwriting',
+      title: "The Art of Songwriting",
       description:
-        'Learn the craft of songwriting from experienced musicians and songwriters.',
-      slug: 'the-art-of-songwriting',
+        "Learn the craft of songwriting from experienced musicians and songwriters.",
+      slug: "the-art-of-songwriting",
       isFeatured: true,
     },
     {
-      title: 'Mastering Your Instrument',
+      title: "Mastering Your Instrument",
       description:
-        'Advanced techniques to master your musical instrument of choice.',
-      slug: 'mastering-your-instrument',
+        "Advanced techniques to master your musical instrument of choice.",
+      slug: "mastering-your-instrument",
       isFeatured: true,
     },
     {
-      title: 'Music Production Essentials',
+      title: "Music Production Essentials",
       description:
-        'Get started with music production with this comprehensive overview.',
-      slug: 'music-production-essentials',
-      isFeatured: true,
-    },
-    // Added two more webinars
-    {
-      title: 'Live Performance Techniques',
-      description:
-        'Enhance your live performance skills with expert tips and strategies.',
-      slug: 'live-performance-techniques',
+        "Get started with music production with this comprehensive overview.",
+      slug: "music-production-essentials",
       isFeatured: true,
     },
     {
-      title: 'Digital Music Marketing',
+      title: "Live Performance Techniques",
       description:
-        'Learn how to promote your music effectively in the digital age.',
-      slug: 'digital-music-marketing',
+        "Enhance your live performance skills with expert tips and strategies.",
+      slug: "live-performance-techniques",
+      isFeatured: true,
+    },
+    {
+      title: "Digital Music Marketing",
+      description:
+        "Learn how to promote your music effectively in the digital age.",
+      slug: "digital-music-marketing",
       isFeatured: true,
     },
   ];
 
   return (
-    <div className="p-12 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <section className="relative w-full overflow-hidden bg-white py-20 dark:bg-black">
+      <div className="mx-auto max-w-7xl px-4">
+        {/* Heading */}
         <div className="text-center">
-          <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">FEATURED WEBINARS</h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">Enhance Your Musical Journey</p>
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-500">
+            Featured Webinars
+          </p>
+
+          <h2 className="text-3xl font-bold tracking-tight text-neutral-900 sm:text-4xl md:text-5xl dark:text-white">
+            Enhance Your Musical Journey
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-neutral-600 dark:text-neutral-400">
+            Explore our featured music webinars and learn from experienced
+            musicians, producers, and instructors.
+          </p>
         </div>
 
+        {/* Webinar Cards */}
         <div className="mt-10">
           <HoverEffect
-          items={featuredWebinars.map(webinar => (
-            {
+            items={featuredWebinars.map((webinar) => ({
               title: webinar.title,
               description: webinar.description,
-              link: '/'
-            }
-          ))}
+              link: `/courses/${webinar.slug}`,
+            }))}
           />
         </div>
 
-        <div className="mt-10 text-center">
-          <Link href={"/"}
-          >
-            <ViewAllCourse/>
-            
-          </Link>
+        {/* View All Courses */}
+        <div className="mt-10 flex justify-center">
+          <ViewAllCourse />
         </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
 
-export default UpcomingWebinars
+export default UpcomingWebinars;
