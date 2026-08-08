@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import MusicSchoolTestimonials from "@/components/moveingCard";
 import UpcomingWebinars from "@/components/UpComingWedinar";
+import { AnimatedTooltipPreview } from "@/components/Animated_Tooltip";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
      <WhyChooseUs/>
      <MusicSchoolTestimonials/>
      <UpcomingWebinars/>
+     <AnimatedTooltipPreview/>
  </main>
   );
 }

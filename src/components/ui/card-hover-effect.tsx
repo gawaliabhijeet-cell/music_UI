@@ -90,8 +90,8 @@ export const Card = ({
         border border-transparent
         bg-black
         p-4
-        dark:border-white/20
-        group-hover:border-slate-700
+        dark:border-white
+        group-hover:border-slate-900
         `,
         className
       )}

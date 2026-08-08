@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link"
 import { HoverEffect } from "./ui/card-hover-effect";
+import ViewAllCourse from "./ui/view_all_course";
 
 function UpcomingWebinars() {
 
@@ -72,9 +73,9 @@ function UpcomingWebinars() {
 
         <div className="mt-10 text-center">
           <Link href={"/"}
-          className="px-4 py-2 rounded border border-neutral-600 text-neutral-700 bg-white hover:bg-gray-100 transition duration-200"
           >
-            View All webinars
+            <ViewAllCourse/>
+            
           </Link>
         </div>
       </div>
