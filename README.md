@@ -27,6 +27,7 @@ Explore music courses, discover upcoming webinars, read student testimonials, an
   ![project screenshot](./public/four.png)
   ![project screenshot](./public/five.png)
   ![project screenshot](./public/six.png)
+---
 
 ## 📖 About The Project
 
@@ -49,6 +50,10 @@ Users can:
 The project is also designed as a practical demonstration of modern **Next.js + Tailwind CSS UI development**.
 
 ---
+## Courses
+![project screenshot](./public/eight.png)
+---
+
 
 # ✨ Features
 
