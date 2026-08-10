@@ -54,6 +54,9 @@ The project is also designed as a practical demonstration of modern **Next.js + 
 ![project screenshot](./public/eight.png)
 ---
 
+## Contact
+![project screenshot](./public/nine.png)
+---
 
 # ✨ Features
 
