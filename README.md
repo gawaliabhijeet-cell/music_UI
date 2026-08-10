@@ -20,6 +20,14 @@ Explore music courses, discover upcoming webinars, read student testimonials, an
 
 ---
 
+## ScreenShot
+  ![project screenshot](./public/one.png)
+  ![project screenshot](./public/two.png)
+  ![project screenshot](./public/three.png)
+  ![project screenshot](./public/four.png)
+  ![project screenshot](./public/five.png)
+  ![project screenshot](./public/six.png)
+
 ## 📖 About The Project
 
 **Music School** is a modern frontend web application designed for an online music-learning platform.
